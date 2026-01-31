@@ -1,0 +1,232 @@
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 8px 8px 0 0;
+    margin-right: 5px;
+    border: none;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.stat-box {
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.stat-box h3 {
+    color: #0d6efd;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#resultImage {
+    border: 3px solid #0d6efd;
+    transition: transform 0.3s;
+}
+
+#resultImage:hover {
+    transform: scale(1.02);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #0d6efd, #0b5ed7);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #0b5ed7, #0a58ca);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+.alert {
+    border-radius: 10px;
+    border: none;
+}
+
+#webcam {
+    background: #000;
+    border-radius: 10px;
+}
+
+#webcamStream {
+    max-width: 100%;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+}
+
+.badge {
+    font-size: 1.1em;
+    padding: 8px 12px;
+}
+
+/* Анимация для индикатора работы */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+.streaming {
+    animation: pulse 2s infinite;
+}
+
+/* Стили для потока с камеры */
+#webcamStream {
+    max-width: 100%;
+    border: 3px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #000;
+    min-height: 300px;
+}
+
+/* Индикатор работы потока */
+.streaming-active {
+    border-color: #28a745 !important;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+}
+
+/* Анимация для индикатора работы */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+.streaming-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Улучшенные бейджи */
+.badge {
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+/* Стили для счетчика чашек */
+.cup-counter {
+    min-width: 120px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(5px);
+    border: 2px solid #28a745;
+}
+
+.cup-counter h6 {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.cup-counter h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Анимация для счетчика */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    animation: pulse 0.3s ease-in-out;
+}
+
+/* Общие стили */
+.filename-truncate {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.stat-item {
+    transition: transform 0.2s;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Стили для таблицы истории */
+#historyTable tbody tr {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#historyTable tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Стили для кнопок действий */
+.btn-group-sm .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Стили для пагинации */
+#paginationControls .btn {
+    min-width: 40px;
+    margin: 0 2px;
+}
+
+/* Стили для предпросмотра отчета */
+#previewContent table {
+    font-size: 0.9rem;
+}
+
+#previewContent table th {
+    font-weight: 600;
+    background-color: #f8f9fa;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .filename-truncate {
+        max-width: 120px;
+    }
+    
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .btn-group .btn {
+        margin-bottom: 2px;
+    }
+}

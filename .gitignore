@@ -1,0 +1,111 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+venv*/
+env*/
+ENV*/
+.venv*/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+instance/
+
+# Uploaded files and results
+uploads/
+results/
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# FastAPI
+static/uploads/
+static/results/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Documentation
+docs/_build/
+
+# IDE
+.project
+.pydevproject
+.settings/
